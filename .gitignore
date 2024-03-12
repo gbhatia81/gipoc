@@ -1,0 +1,12 @@
+/dist
+.venv
+.vscode
+.idea/
+.pytest_cache
+.coverage
+.idea
+.env
+*.pyc
+coverage.xml
+.DS_Store
+.build

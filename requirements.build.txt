@@ -1,0 +1,7 @@
+langchain
+openai 
+chromadb 
+tabulate 
+sqlalchemy 
+sqlalchemy-bigquery 
+google-cloud-bigquery
