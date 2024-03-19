@@ -1,7 +1,9 @@
 langchain
-openai 
+langchain-google-vertexai
+langchain-openai
 chromadb 
 tabulate 
 sqlalchemy 
 sqlalchemy-bigquery 
 google-cloud-bigquery
+google-cloud-bigquery-storage

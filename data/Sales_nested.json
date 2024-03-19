@@ -1,0 +1,53 @@
+[
+      {
+        "description": "id for store",
+        "mode": "REQUIRED",
+        "name": "store_id",
+        "type": "STRING"
+      },
+      {
+        "description": "transaction id of sales trasnsaction",
+        "mode": "REQUIRED",
+        "name": "transaction_id",
+        "type": "STRING"
+      },
+      {
+        "description": "Item of the transaction",
+        "fields": [
+          {
+            "description": "id of item",
+            "mode": "REQUIRED",
+            "name": "item_id",
+            "type": "STRING"
+          },
+          {
+            "description": "quantity of an item",
+            "mode": "REQUIRED",
+            "name": "qty",
+            "type": "INTEGER"
+          },
+          {
+            "description": "price of an item",
+            "mode": "REQUIRED",
+            "name": "sale_price",
+            "type": "FLOAT"
+          },
+          {
+            "description": "actual price of an item",
+            "mode": "REQUIRED",
+            "name": "actual_sale_price",
+            "type": "FLOAT"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "item",
+        "type": "RECORD"
+      },
+      {
+        "description": "transaction time",
+        "mode": "REQUIRED",
+        "name": "date",
+        "type": "TIMESTAMP"
+      }
+    ]
+  
