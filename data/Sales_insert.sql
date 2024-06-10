@@ -1,23 +1,30 @@
-INSERT INTO `sample.Sales`
-(store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date)
-VALUES
-('STORE_1', 'TRANSACTION_1', 'ITEM_ID_1',1,10,10, TIMESTAMP('2024-01-01 09:00:00')
-);
-
-INSERT INTO `sample.Sales`
-(store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date)
-VALUES
-('STORE_1', 'TRANSACTION_1', 'ITEM_ID_2',2,11,11, TIMESTAMP('2024-01-01 09:00:00')
-);
-
-INSERT INTO `sample.Sales`
-(store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date)
-VALUES
-('STORE_1', 'TRANSACTION_2', 'ITEM_ID_3',1,12,12, TIMESTAMP('2024-01-01 09:10:00')
-);
-
-INSERT INTO `sample.Sales`
-(store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date)
-VALUES
-('STORE_2', 'TRANSACTION_3', 'ITEM_ID_1',1,10,11, TIMESTAMP('2024-01-02 08:00:00')
-);
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_1','i100',10,50,51,TIMESTAMP('2024-01-01'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_2','i100',10,50,51,TIMESTAMP('2024-01-02'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_3','i100',10,50,51,TIMESTAMP('2024-01-03'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_4','i100',10,50,51,TIMESTAMP('2024-01-04'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_5','i100',10,50,51,TIMESTAMP('2024-01-05'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_6','i100',10,50,51,TIMESTAMP('2024-01-06'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_7','i100',10,50,51,TIMESTAMP('2024-01-07'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_8','i100',10,50,51,TIMESTAMP('2024-01-08'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_9','i100',10,50,51,TIMESTAMP('2024-01-09'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_10','i100',10,50,51,TIMESTAMP('2024-01-10'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_11','i100',10,50,51,TIMESTAMP('2024-01-16'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_12','i100',10,50,51,TIMESTAMP('2024-01-17'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_13','i100',10,50,51,TIMESTAMP('2024-01-18'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_14','i100',10,50,51,TIMESTAMP('2024-01-19'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_15','i100',10,50,51,TIMESTAMP('2024-01-20'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_16','i100',10,50,51,TIMESTAMP('2024-01-21'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_17','i100',10,50,51,TIMESTAMP('2024-01-22'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_18','i100',10,50,51,TIMESTAMP('2024-01-23'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_19','i100',10,50,51,TIMESTAMP('2024-01-24'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_20','i100',10,50,51,TIMESTAMP('2024-01-25'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_21','i101',10,50,51,TIMESTAMP('2024-01-01'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_22','i101',10,50,51,TIMESTAMP('2024-01-02'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_23','i101',10,50,51,TIMESTAMP('2024-01-03'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_24','i101',10,50,51,TIMESTAMP('2024-01-04'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_25','i101',10,50,51,TIMESTAMP('2024-01-05'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_26','i101',10,50,51,TIMESTAMP('2024-01-06'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_27','i101',10,50,51,TIMESTAMP('2024-01-07'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_28','i101',10,50,51,TIMESTAMP('2024-01-08'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_29','i101',10,50,51,TIMESTAMP('2024-01-09'));
+INSERT INTO `sample.Sales` (store_id, transaction_id, item_id, qty, sale_price, actual_sale_price, date) VALUES ('s100','t_30','i101',10,50,51,TIMESTAMP('2024-01-10'));

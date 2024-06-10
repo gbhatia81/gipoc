@@ -1,3 +1,4 @@
+ipykernel
 langchain
 langchain-google-vertexai
 langchain-openai
@@ -7,3 +8,4 @@ sqlalchemy
 sqlalchemy-bigquery 
 google-cloud-bigquery
 google-cloud-bigquery-storage
+langchain-community

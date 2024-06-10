@@ -1,0 +1,26 @@
+[
+  {
+    "description": "id for store",
+    "mode": "REQUIRED",
+    "name": "store_id",
+    "type": "STRING"
+  },
+  {
+    "description": "id of item ",
+    "mode": "REQUIRED",
+    "name": "item_id",
+    "type": "STRING"
+  },
+  {
+    "description": "remaining inventory",
+    "mode": "REQUIRED",
+    "name": "count",
+    "type": "INTEGER"
+  },
+  {
+    "description": "inventory snapshot time",
+    "mode": "REQUIRED",
+    "name": "snapshot_time",
+    "type": "TIMESTAMP"
+  }
+]

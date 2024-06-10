@@ -10,3 +10,4 @@
 coverage.xml
 .DS_Store
 .build
+src/genai_workshop/example_notebook/tinyllama-colorist-v10/*

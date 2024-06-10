@@ -10,9 +10,12 @@ from agent_toolkit.CustomSQLDatabaseToolkit import CustomSQLDatabaseToolkit
 from langchain.sql_database import SQLDatabase
 
 from langchain_google_vertexai import VertexAI
+from langchain_google_vertexai import ChatVertexAI
 # from langchain_openai import ChatOpenAI
 from langchain.agents import AgentExecutor
+from langchain.globals import set_verbose,set_debug
 
+set_debug(True)
 # service_account_file = "/path/to/your/service-account-key.json" # Change to where your service account key file is located
 
 project = "burner-gaubhati0"
@@ -26,7 +29,8 @@ db = SQLDatabase.from_uri(sqlalchemy_url,sample_rows_in_table_info=0)
 
 # os.environ["OPENAI_API_KEY"] = "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"
 
-llm = VertexAI(model_name="gemini-pro")
+# llm = VertexAI(model_name="gemini-pro")
+llm = ChatVertexAI(model_name="gemini-1.5-pro")
 # llm = VertexAI()
 
 # llm = ChatOpenAI(
@@ -45,12 +49,13 @@ llm=llm,
 toolkit=toolkit,
 verbose=True,
 top_k=1000,
+agent_type="tool-calling"
 )
 
 
 # This is an important query which does not work well with nested BQ Table in Vertex but OpenAI seems to handle it.
 # Use it with Sales_nested.json schema
-#agent_executor.invoke("What are total actual sale price in store STORE_1 in month on January in year 2024? ")
+final_answer = agent_executor.invoke("What are total actual sale price in store STORE_1 in month on January in year 2024? ")
 
 #agent_executor.invoke("Show me sales for STORE_1 for Q1 2024? ")
 
@@ -63,5 +68,8 @@ top_k=1000,
 #                       "and data field with results of final response from database. Data field should contain field column_name with respective column name "
 #                       "and field value with respective column value")
 
-agent_executor.invoke("Show me sales for STORE_1 for Q1 2024? ")
+# agent_executor.invoke("Show me sales for s100 for January 2024 and compare against inventory in that period? ")
 
+# final_answer = agent_executor.invoke("Show me sales for s100 for January 2024 and compare against inventory in that period? ")
+
+print(f"final answer is: {final_answer}")
