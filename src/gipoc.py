@@ -27,7 +27,6 @@ sqlalchemy_url = f'bigquery://{project}/{dataset}'
 # Set up langchain
 db = SQLDatabase.from_uri(sqlalchemy_url,sample_rows_in_table_info=0)
 
-# os.environ["OPENAI_API_KEY"] = "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"
 
 # llm = VertexAI(model_name="gemini-pro")
 llm = ChatVertexAI(model_name="gemini-1.5-pro")
